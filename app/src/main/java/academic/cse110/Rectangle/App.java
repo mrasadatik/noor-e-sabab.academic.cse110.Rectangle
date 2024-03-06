@@ -1,14 +1,11 @@
 package academic.cse110.Rectangle;
 
 class Rectangle {
-    @SuppressWarnings("FieldMayBeFinal")
-    private double width;
-    @SuppressWarnings("FieldMayBeFinal")
-    private double height;
+    private double width = 1.0;
+    private double height = 1.0;
     
     public Rectangle() {
-        width = 1.0;
-        height = 1.0;
+        // A no-arg constructor that creates a default rectangle.
     }
     
     public Rectangle(double width, double height) {
