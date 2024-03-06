@@ -1,33 +1,35 @@
 package academic.cse110.Rectangle;
 
 class Rectangle {
-    private final double WIDTH;
-    private final double HEIGHT;
+    @SuppressWarnings("FieldMayBeFinal")
+    private double width;
+    @SuppressWarnings("FieldMayBeFinal")
+    private double height;
     
     public Rectangle() {
-        WIDTH = 1.0;
-        HEIGHT = 1.0;
+        width = 1.0;
+        height = 1.0;
     }
     
     public Rectangle(double width, double height) {
-        this.WIDTH = width;
-        this.HEIGHT = height;
+        this.width = width;
+        this.height = height;
     }
     
     public double getWidth() {
-        return WIDTH;
+        return width;
     }
     
     public double getHeight() {
-        return HEIGHT;
+        return height;
     }
     
     public double getArea() {
-        return WIDTH * HEIGHT;
+        return width * height;
     }
     
     public double getPerimeter() {
-        return 2 * (WIDTH + HEIGHT);
+        return 2 * (width + height);
     }
 }
 
